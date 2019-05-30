@@ -15,10 +15,13 @@ div.prefix_sample {
 
 div.prefix_sample:hover{
   background-color: red;
-  transform: translateX(0px) translateY(70px) rotate(50deg) translate(50px,100px);
-
+  transform: translateX(0px) translateY(70px) rotate(90deg) translate(50px,100px);
+  transition-duration: 3s;/*これを設定することにより、常にそこに画像があることではなくなり、色変化まで表す。*/
   /*
   deg: 角度を示す単位
   translate(x, y) 単位はpx, %など
   */
+  /*厳密に言えば元の位置から移動したわけではないのです*/
+  /*起点はどこからになるのかはまだ謎であった。*/
+  
 }
