@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+div.prefix_sample {
+  background-color: blue;
+  width: 200px;
+  height: 50px;
+  position: fixed;
+  /*
+  1.fixedを置かないと、常に箱がアニメーションのようにちらついてしまう。
+  （一回移動したものの、そのdivの実態は常に元のカーソル位置にあるため）
+  */
+}
+
+div.prefix_sample:hover{
+  background-color: red;
+  transform: translateX(0px) translateY(70px) rotate(50deg) translate(50px,100px);
+
+  /*
+  deg: 角度を示す単位
+  translate(x, y) 単位はpx, %など
+  */
+}
