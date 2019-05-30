@@ -23,5 +23,34 @@ div.prefix_sample:hover{
   */
   /*厳密に言えば元の位置から移動したわけではないのです*/
   /*起点はどこからになるのかはまだ謎であった。*/
-  
 }
+
+.translate{
+  margin-top: 200px;
+  width: 80px;
+  height: 80px;
+   background: rgba(18,132,129,0.8);
+}
+
+.translate:hover{
+  /* hoverの位置をもう少し的確（ピンポイント）で確定させることはできないだろうか */
+  transform: translateX(200px);
+  transition-duration: 0.1s;/*0.1秒後の位置にマウスカーソルが置かれるとずっと出発できない*/
+}
+
+.translate-go{
+  margin-top: 100px;
+  width: 80px;
+  height: 80px;
+   background: rgba(18,132,129,0.8);
+}
+
+.translate-go:hover{
+  /* hoverの位置をもう少し的確（ピンポイント）で確定させることはできないだろうか */
+  transform-origin: left top;
+  transform: translateX(200px);
+  transition-duration: 0.4s;/*0.1秒後の位置にマウスカーソルが置かれるとずっと出発できない*/
+  /*適用範囲を考える必要がある*/
+  /*そこでtransform-origin*/
+}
+
